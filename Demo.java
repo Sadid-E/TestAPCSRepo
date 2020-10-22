@@ -51,4 +51,17 @@ public static int[][] create2DArray(int rows, int cols, int maxValue) {
   return array;
 }
 
+public static int[][] create2DArrayRandomized(int rows, int cols, int maxValue) {
+  int[][] array = new int[rows][];
+  for (int i = 0; i < rows; i++) {
+    int col = (int) Math.round(Math.random() * cols);
+    array[i] = new int[col];
+  for (int j = 0; j < col; j++) {
+    int value = (int) Math.round(Math.random() * maxValue);
+    array[i][j] = value;
+    }
+  }
+  return array;
+}
+
 }
