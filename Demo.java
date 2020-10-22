@@ -40,4 +40,15 @@ public static String arrayDeepToString(int[][] arr) {
   return str;
 }
 
+public static int[][] create2DArray(int rows, int cols, int maxValue) {
+  int[][] array = new int[rows][cols];
+  for (int i = 0; i < rows; i++) {
+    for (int j = 0; j < cols; j++) {
+      int value = (int) Math.round(Math.random() * maxValue);
+      array[i][j] = value;
+    }
+  }
+  return array;
+}
+
 }
