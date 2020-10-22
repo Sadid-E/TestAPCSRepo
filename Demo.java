@@ -7,6 +7,15 @@ public static void main(String[] args) {
   printLoop(Integer.parseInt(args[0]));
 }
 
+public static void printLoop(int n) {
+  for (int i = 1; i <= n; i++) {
+    for (int j = i; j <= n; j++) {
+      System.out.print(i);
+    }
+    System.out.println();
+  }
+}
+
 public static String arrToString(int[] arr){
   String str = "{";
   if (arr.length == 0) {
